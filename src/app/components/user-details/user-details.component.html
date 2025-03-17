@@ -1,0 +1,36 @@
+<div class="user-details">
+  <mat-list>
+    <mat-list-item class="u-text-align-center">
+      <span style="font-size: 18px; font-weight: 500;">Detalhes do Usuário</span>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <span style="font-size: 18px; font-weight: 500;">Nome: </span><span style="font-size: 14px;">{{ user.nome | dashIfEmpty}}</span>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <span style="font-size: 18px; font-weight: 500;">Email: </span><span style="font-size: 14px;">{{ user.email | dashIfEmpty}}</span>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <span style="font-size: 18px; font-weight: 500;">Telefone: </span><span style="font-size: 14px;">{{ user.telefone | phone }}</span>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <span style="font-size: 18px; font-weight: 500;">Endereço: </span><span style="font-size: 14px;">{{ user.endereco | address }}</span>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <span style="font-size: 18px; font-weight: 500;">Status: </span><span style="font-size: 14px;">{{ user.ativo | status }}</span>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <span style="font-size: 18px; font-weight: 500;">Função: </span><span style="font-size: 14px;">{{ user.funcao | dashIfEmpty}}</span>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <span style="font-size: 18px; font-weight: 500;">Data de Cadastro: </span><span style="font-size: 14px;">{{ user.dataCadastro | date:'dd/MM/yyyy' | dashIfEmpty }}</span>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list>
+</div>
